@@ -13,16 +13,16 @@ const guess = () => {
 		if (x === null) {
 			break; 
 		} 
-		else if (isNaN(x)) {
+		if (isNaN(x)) {
 			alert("Введи число!");
 		} 
-		else if (x < n) {
+		if (x < n) {
 			alert('Больше!');
 		}
-		else if (x > n) {
+		if (x > n) {
 			alert('Меньше!');
 		}
-		else {
+		if (x == n) {
 			alert('Правильно!');
 			break;
 		}
